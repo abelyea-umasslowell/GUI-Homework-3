@@ -1,0 +1,63 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+Andrew Belyea, UMass Lowell Computer Science, Andrew_Belyea@student.uml.edu
+Copyright (c) 2025 by Andrew. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AB on October 29, 2025 
+Sources: https://www.w3schools.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Multiplication Table</title>
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <!-- Input form and submit button -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form">
+            <h1>Dynamic Multiplication Table</h1>
+            <form action="/action_page.php">
+              <!-- User input for row start and end numbers -->
+              Enter four numbers (in range -50 to 50) to generate a dynamic multiplication table.<br><br>
+              <fieldset>
+              <legend>Please enter the range of the multiplier:</legend>
+              <input type="text" id="row1" placeholder="Start" required="required"/>
+                  <span class="row1Text"></span>
+                  </br>
+              <input type="text" id="row2" placeholder="End" required="required" />
+                  <span class="row2Text"></span>
+                  <br>
+              </fieldset>
+              <br>
+              <fieldset>
+              <!-- User input for column start and end number -->
+              <legend>Please enter the range of the multiplicand:</legend>
+              <input type="text" id="col1" placeholder="Start" required="required" />
+                  <span class="col1Text"></span>
+                  <br>
+              <input type="text" id="col2" placeholder="End" required="required" />
+                  <span class="col2Text"></span>
+                  <br>
+              </fieldset>
+              <br>
+            </form>
+            <!-- Submit button  -->
+            <button type="button" onclick="TableStart()">Generate Table</button>
+          </div>
+        </div>
+        </div>
+        <br>
+        <div id="table">
+        </div>
+        <!-- JS Script -->
+        <script src="js/js.js">
+        </script>
+    </body>
+</html>
